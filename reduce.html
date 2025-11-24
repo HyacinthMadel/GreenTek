@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reduce Climate Impact</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #2e7d32;
+      --light-green: #a5d6a7;
+      --bg: #f9fdfb;
+      --dark: #1b1b1b;
+      --white: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--green);
+      color: var(--white);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--white);
+      font-weight: 600;
+      padding: 8px 12px;
+      transition: background 0.3s, color 0.3s;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: var(--light-green);
+      color: var(--dark);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background-color: var(--white);
+      padding: 25px 30px;
+      margin-bottom: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    section h2 {
+      color: var(--green);
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    section ul {
+      list-style: disc inside;
+      padding-left: 0;
+    }
+
+    section ul li {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--green);
+      color: var(--white);
+      font-weight: 500;
+      margin-top: 50px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>What Can You Do to Reduce Climate Impact?</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="monitor.html">Monitor</a></li>
+        <li><a href="empower.html">Empower</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="reduce-energy">
+      <h2>Reduce Energy Consumption</h2>
+      <ul>
+        <li><strong>Use energy-efficient appliances:</strong> Look for Energy Star certified products.</li>
+        <li><strong>Switch to LED lighting:</strong> LEDs use up to 75% less energy and last much longer than incandescent bulbs.</li>
+        <li><strong>Unplug electronics:</strong> Many devices consume energy even when turned off.</li>
+        <li><strong>Adjust your thermostat:</strong> Lower it in winter and raise it in summer to reduce heating and cooling needs.</li>
+      </ul>
+    </section>
+
+    <section id="reduce-waste">
+      <h2>Reduce Waste and Recycle</h2>
+      <ul>
+        <li><strong>Reduce, Reuse, Recycle:</strong> Minimize waste by choosing products with less packaging and recycling whenever possible.</li>
+        <li><strong>Compost food scraps:</strong> Composting reduces landfill waste and creates nutrient-rich soil.</li>
+        <li><strong>Avoid single-use plastics:</strong> Use reusable water bottles, shopping bags, and food containers.</li>
+      </ul>
+    </section>
+
+    <section id="reduce-transportation">
+      <h2>Reduce Transportation Emissions</h2>
+      <ul>
+        <li><strong>Walk, bike, or use public transport:</strong> Opt for these modes of transportation whenever possible.</li>
+        <li><strong>Carpool:</strong> Share rides with others to reduce the number of cars on the road.</li>
+        <li><strong>Drive an electric or hybrid vehicle:</strong> These vehicles produce fewer emissions than gasoline-powered cars.</li>
+        <li><strong>Maintain your vehicle:</strong> Regular maintenance improves fuel efficiency.</li>
+      </ul>
+    </section>
+
+    <section id="reduce-consumption">
+      <h2>Reduce Consumption of Resources</h2>
+      <ul>
+        <li><strong>Eat less meat:</strong> Animal agriculture is a significant contributor to greenhouse gas emissions.</li>
+        <li><strong>Buy local and sustainable products:</strong> Support businesses that prioritize environmental responsibility.</li>
+        <li><strong>Conserve water:</strong> Take shorter showers, fix leaks, and water your lawn efficiently.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Climate Action Project</p>
+  </footer>
+
+</body>
+</html>

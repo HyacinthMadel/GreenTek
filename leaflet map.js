@@ -1,0 +1,38 @@
+class LeafletMap {
+
+    constructor(containerId, center, zoom) {
+      this.map = L.map(containerId).setView(center, zoom);
+      this.initTileLayer();
+    }
+  
+    initTileLayer() {
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(this.map);
+    }
+  
+    addMarker(lat, lng, message) {
+      const marker = L.marker([lat, lng]).addTo(this.map);
+      marker.bindPopup(message);
+    }
+  
+    loadMarkersFromJson(url) {
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          data.forEach(marker => {
+            this.addMarker(marker.latitude, marker.longitude, marker.message);
+          });
+        })
+        .catch(error => console.error('Error loading markers:', error));
+    }
+  }
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     
+  
+  const myMap = new LeafletMap('map', [8.360004, 124.868419], 18);
+  
+  myMap.loadMarkersFromJson('applet2.json');
